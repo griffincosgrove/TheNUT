@@ -1,0 +1,47 @@
+CREATE TABLE CUSTOMER
+	(
+	UserID int IDENTITY (1,1),
+	Email varchar(50) NOT NULL,
+	Password varchar(256) NOT NULL,
+	firstName varchar(30) NOT NULL,
+	lastName varchar(40) NOT NULL,
+	CONSTRAINT PK_USER_UserID PRIMARY KEY (UserID))
+  
+  
+CREATE TABLE foodItem
+(
+foodID INT identity(1,1),
+menuItem varchar(20) NOT NULL,
+calories int NOT NULL
+CONSTRAINT PK_FOODITEM_FOODID PRIMARY KEY (foodID)
+)
+
+INSERT INTO dbo.foodItem values
+(
+'The Farmer',
+980
+)
+
+INSERT INTO dbo.foodItem values
+(
+'The Fit',
+580
+)
+
+INSERT INTO dbo.foodItem values
+(
+'The Southern',
+660
+)
+
+INSERT INTO dbo.foodItem values
+(
+'The Sticky Chin',
+980
+)
+
+INSERT INTO dbo.foodItem values
+(
+'The Toast',
+990
+)
