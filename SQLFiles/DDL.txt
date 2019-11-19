@@ -1,3 +1,5 @@
+--name the db NUTDB
+
 CREATE TABLE CUSTOMER
 	(
 	UserID int IDENTITY (1,1),
@@ -14,6 +16,13 @@ foodID INT identity(1,1),
 menuItem varchar(20) NOT NULL,
 calories int NOT NULL
 CONSTRAINT PK_FOODITEM_FOODID PRIMARY KEY (foodID)
+)
+
+CREATE TABLE foodConsumed
+(
+email varchar(30) NOT NULL,
+food varchar(30) NOT NULL,
+calories int NOT NULL,
 )
 
 INSERT INTO dbo.foodItem values

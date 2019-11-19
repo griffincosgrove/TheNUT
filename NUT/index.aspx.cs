@@ -15,7 +15,8 @@ public partial class index : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Person.mealList.Clear();
+        Person.calorieCounter = 0;
     }
 
     protected void btnCreateAccount_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ public partial class index : System.Web.UI.Page
 
                     if (PasswordHash.ValidatePassword(txtPassword.Text, storedHash)) // if the entered password matches what is stored, it will show success
                     {
-
+                        Session["Email"] = txtEmail.Text;
                         Response.Redirect("indexSignedIn.aspx");
 
                     }

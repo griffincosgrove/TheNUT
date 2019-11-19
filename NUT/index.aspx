@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Nutrional Utility Tracker</div>
+            Nutritional Utility Tracker</div>
         Please Sign in<br />
 &nbsp;Email
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
@@ -24,5 +24,8 @@
         <br />
         <asp:Button ID="btnCreateAccount" runat="server" OnClick="btnCreateAccount_Click" Text="Create Account" />
     </form>
+    <footer> 
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Created by Front Row Technology Group"></asp:Label> </footer>
 </body>
 </html>
