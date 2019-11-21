@@ -1,6 +1,4 @@
 
-DROP TABLE foodItem;
-
 CREATE TABLE CUSTOMER
 	(
 	UserID int IDENTITY (1,1),
@@ -34,6 +32,16 @@ CREATE TABLE foodConsumed
 email varchar(30) NOT NULL,
 food varchar(30) NOT NULL,
 calories int NOT NULL,
+caloriesFromFat int NOT NULL,
+totalFat int NOT NULL,
+satFat int NOT NULL,
+transFat int NOT NULL,
+chol int NOT NULL,
+sodium int NOT NULL,
+totalCarbs int NOT NULL,
+fiber int NOT NULL,
+sugars int NOT NULL,
+protein int NOT NULL,
 )
 
 INSERT INTO dbo.foodItem 
